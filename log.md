@@ -10,3 +10,13 @@ Key takeaways
 [alx python back-end](https://github.com/Nganga02/alx-backend-python),
 [alx airbnb database](https://github.com/Nganga02/alx-airbnb-database)
 
+
+# week 01
+## 09 Nov - 16 Nov
+Had the opportunity to work on unit testing and integration testing: 
+Understood the python's unittest module
+
+**Repo**: [alx-python-backend/0x03](https://github.com/Nganga02/alx-backend-python/tree/master/0x03-Unittests_and_integration_tests)
+
+Delved into the django rest framework introduction and had an interesting time understanding views, models, urls, serializers. I came across this interesting diagram from claude which helped me stich it all together.
+
