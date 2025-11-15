@@ -18,5 +18,48 @@ Understood the python's unittest module
 
 **Repo**: [alx-python-backend/0x03](https://github.com/Nganga02/alx-backend-python/tree/master/0x03-Unittests_and_integration_tests)
 
-Delved into the django rest framework introduction and had an interesting time understanding views, models, urls, serializers. I came across this interesting diagram from claude which helped me stich it all together.
+Delved into the django rest framework introduction and had an interesting time understanding views, models, urls, serializers. I came across this interesting diagram from claude which helped me stitch it all together.
+
+
+*For this you have to view it in the raw for to get the better view*
+
+┌──────────────┐
+│   Client     │  (Browser, Mobile App, etc.)
+│  (HTTP)      │
+└──────┬───────┘
+       │ JSON Request
+       ▼
+┌──────────────────────────────────────────┐
+│           URLS (urls.py)                 │  Routes requests
+└──────┬───────────────────────────────────┘
+       │
+       ▼
+┌──────────────────────────────────────────┐
+│          VIEWS (views.py)                │  Business logic & orchestration
+│  - Receives HTTP request                 │
+│  - Validates permissions                 │
+│  - Calls Model to get/save data          │  ← Interacts with database
+│  - Passes data to Serializer             │
+│  - Returns HTTP response                 │
+└──────┬───────────────────────────────────┘
+       │                    ▲
+       │                    │
+       ▼                    │
+┌──────────────────┐  ┌─────────────────┐
+│   SERIALIZERS    │  │     MODELS      │  ← ONLY component that talks to DB
+│  (serializers.py)│  │   (models.py)   │
+│                  │  │                 │
+│  - Validates data│  │  - ORM layer    │
+│  - Converts:     │  │  - SQL queries  │
+│    Python ↔ JSON │  │  - CRUD ops     │
+│                  │  │                 │
+└──────────────────┘  └────────┬────────┘
+                               │
+                               ▼
+                      ┌─────────────────┐
+                      │    DATABASE     │
+                      │   (PostgreSQL,  │
+                      │   SQLite, etc.) │
+                      └─────────────────┘ 
+
 
