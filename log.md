@@ -63,3 +63,25 @@ Delved into the django rest framework introduction and had an interesting time u
                       └─────────────────┘ 
 
 
+# Week 02
+## 17-24 Nov
+For this week major concentration was on the following for the __backend__
+
+| Tool/Library |	Purpose                                              |
+|--------------|----------------------------------------------------------|
+Django Allauth | 	Streamlined user authentication, including email verification and social auth
+Django REST Framework (DRF) |	Token and session authentication for APIs
+SimpleJWT / djangorestframework-simplejwt |	Lightweight JWT authentication for DRF
+OAuthLib / django-oauth-toolkit |	Secure OAuth2 implementation in Django
+Guardian |	Object-level permissions and per-instance access control
+Auth0 |	Third-party identity and access management integration
+Keycloak |	Open-source identity provider for managing enterprise SSO
+Okta |	       Enterprise IAM provider with SSO, MFA, and directory services
+PyJWT |	Lightweight JWT token generation and validation
+Auditlog |	Automatic tracking of model changes and user actions for audit trails
+
+And the following for __engineering programming__\
+1. Initialize a project on truss
+2. Finish the course on linear algebra
+
+The following were the findings for this week:
